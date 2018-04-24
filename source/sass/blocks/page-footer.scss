@@ -1,36 +1,36 @@
 .page-footer {
-    font-family: "Open Sans", "Arial", sans-serif;
-    width: 320px;
-    background-color: #f1f1f1;
+  font-family: "Open Sans", "Arial", sans-serif;
+  width: 320px;
+  background-color: $light-grey;
 }
 
 .page-footer__wrapper {
-    background-color: #f1f1f1;
-    width: 320px;
-    margin: auto;
+  background-color: $light-grey;
+  width: 320px;
+  margin: auto;
 }
 
 .page-footer__social-list {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .page-footer__copiright-item {
-    margin: 0;
-    padding: 0;
-    margin-left: 37px;
-    font-size: 19px;
-    line-height: 18px;
-    font-weight: 700;
-    color: black;
+  margin: 0;
+  padding: 0;
+  margin-left: 37px;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
 }
 
 .social-links {
-    justify-content: space-between;
-    width: 140px;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
+  justify-content: space-between;
+  width: 140px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }

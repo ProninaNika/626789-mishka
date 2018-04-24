@@ -18,16 +18,16 @@
           <button type="button" class="main-nav__toggle"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="menu__link" href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a class="menu__link" href="form.html">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <a class="menu__link" href="#">Новые поступления</a>
+              <a class="main-nav__link" href="#">Новые поступления</a>
             </li>
             <li class="main-nav__item">
-              <a class="menu__link" href="#">Распродажа</a>
+              <a class="main-nav__link" href="#">Распродажа</a>
             </li>
           </ul>
           <ul class="main-nav__user-list">
@@ -55,7 +55,7 @@
     <section class="form">
       <h2 class="visually-hidden">Форма</h2>
       <div class="form__wrapper">
-        <p class="form__text">
+        <p class="form__text-header">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
       </div>
@@ -81,32 +81,32 @@
               <legend class="form__title">цвет</legend>
               <div class="form__inside">
                 <div class="form__item">
-                  <input type="checkbox" id="white" class="form__input" checked>
+                  <input type="checkbox" id="white" class="form__checkbox" checked>
                   <label for="white" class="form__text">Белый
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="gray" class="form__input" checked>
+                  <input type="checkbox" id="gray" class="form__checkbox" checked>
                   <label for="gray" class="form__text">Серый
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="tiffany" class="form__input">
+                  <input type="checkbox" id="tiffany" class="form__checkbox">
                   <label for="tiffany" class="form__text">«Тиффани»
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="black" class="form__input">
+                  <input type="checkbox" id="black" class="form__checkbox">
                   <label for="black" class="form__text">Черный
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="pink" class="form__input">
+                  <input type="checkbox" id="pink" class="form__checkbox">
                   <label for="pink" class="form__text">Розовый
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="orange" class="form__input">
+                  <input type="checkbox" id="orange" class="form__checkbox">
                   <label for="orange" class="form__text">Оранжевый
                   </label>
                 </div>
@@ -119,7 +119,7 @@
             <legend class="form__title">ФИО</legend>
             <div class="form__item">
               <label for="name-field" class="form__text">Имя:</label>
-              <input type="text" name="name" id="name-field" class="form__input" placeholder="Введите ваше имя*" required>
+              <input class="form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
             </div>
             <div class="form__item">
               <label for="lastname-field" class="form__text">Фамилия:</label>

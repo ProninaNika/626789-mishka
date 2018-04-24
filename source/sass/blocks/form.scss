@@ -1,47 +1,68 @@
 .form__title {
-    font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
+  padding-top: 50px;
 }
 
-.form__text {
-    width: 250px;
-    color: #444444;
-    padding-left: 30px;
-    padding-right: 40px;
-    padding-top: 22px;
-    padding-bottom: 24px;
-    font-size: 13px;
-    line-height: 24px;
-    font-family: "Open Sans", "Arial", sans-serif;
+.form__text-header {
+  width: 250px;
+  color: $color-text;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .form {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    width: 260px;
-    font-family: "Open Sans", "Arial", sans-serif;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  width: 260px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .form__fieldset {
-    border: none;
+  border: none;
 }
 
 .form__fieldset-title,
 .form__title, {
-    width: 62px;
-    font-size: 17px;
-    line-height: 16px;
-    font-weight: 700;
-    color: #62d1ba;
-    text-transform: uppercase;
+  width: 62px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $mint-lighter;
+  text-transform: uppercase;
 }
 
-.form__label {
-    color: black;
-    font-weight: 700;
-    line-height: 18px;
-    font-size: 17px;
-    align-items: center;
-    height: 50px;
-    width: 180px;
+.form__label,
+.form__text {
+  color: $black;
+  font-weight: 700;
+  line-height: 18px;
+  font-size: 17px;
+  align-items: center;
+  height: 50px;
+  width: 180px;
+}
+
+.form__checkbox {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border: 2px solid $black;
+}
+
+.form__input--radio {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  color: $mint-lighter;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 2px solid $black;
 }
