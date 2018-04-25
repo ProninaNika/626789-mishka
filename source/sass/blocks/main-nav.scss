@@ -41,11 +41,9 @@
 .main-nav__item--new,
 .main-nav__item--sale {
   display: none;
-  
 }
 
 @media (min-width: 768px) {
-  
   .main-nav__user-list {
     display: flex;
     width: 396px;
