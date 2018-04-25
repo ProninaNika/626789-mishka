@@ -3,29 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
   <header class="page-header">
     <div class="page-header__wrapper">
       <h2 class="visually-hidden">Интернет-магазин Мишка</h2>
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="#" width="150" height="150" alt="Мишка">
+        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="150" height="150" alt="Мишка">
       </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <button type="button" class="main-nav__toggle"></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Новые поступления</a>
+              <a class="main-nav__link" href="#">Новые поступления</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Распродажа</a>
+              <a class="main-nav__link" href="#">Распродажа</a>
             </li>
           </ul>
           <ul class="main-nav__user-list">
@@ -40,18 +42,14 @@
       </nav>
     </div>
   </header>
-  <main class="page-form">
-    <section class="form">
-      <h2 class="visually-hidden">Форма</h2>
-      <div class="from__wrapper">
-        <span class="form__info">Бесплатная доставка по всей России</span>
-        <h1 class="form__title">Вязание на заказ</h1>
-      </div>
+  <main class="page-main">
+    <section class="catalog-promo">
+      <h1 class="catalog-promo__text">Вязание на заказ</h1>
     </section>
     <section class="form">
       <h2 class="visually-hidden">Форма</h2>
       <div class="form__wrapper">
-        <p class="form__text">
+        <p class="form__text-header">
           Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
         </p>
       </div>
@@ -77,32 +75,32 @@
               <legend class="form__title">цвет</legend>
               <div class="form__inside">
                 <div class="form__item">
-                  <input type="checkbox" id="white" class="form__input" checked>
+                  <input type="checkbox" id="white" class="form__checkbox" checked>
                   <label for="white" class="form__text">Белый
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="gray" class="form__input" checked>
+                  <input type="checkbox" id="gray" class="form__checkbox" checked>
                   <label for="gray" class="form__text">Серый
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="tiffany" class="form__input">
+                  <input type="checkbox" id="tiffany" class="form__checkbox">
                   <label for="tiffany" class="form__text">«Тиффани»
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="black" class="form__input">
+                  <input type="checkbox" id="black" class="form__checkbox">
                   <label for="black" class="form__text">Черный
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="pink" class="form__input">
+                  <input type="checkbox" id="pink" class="form__checkbox">
                   <label for="pink" class="form__text">Розовый
                   </label>
                 </div>
                 <div class="form__item">
-                  <input type="checkbox" id="orange" class="form__input">
+                  <input type="checkbox" id="orange" class="form__checkbox">
                   <label for="orange" class="form__text">Оранжевый
                   </label>
                 </div>
@@ -115,7 +113,7 @@
             <legend class="form__title">ФИО</legend>
             <div class="form__item">
               <label for="name-field" class="form__text">Имя:</label>
-              <input type="text" name="name" id="name-field" class="form__input" placeholder="Введите ваше имя*" required>
+              <input class="form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
             </div>
             <div class="form__item">
               <label for="lastname-field" class="form__text">Фамилия:</label>
@@ -156,19 +154,19 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__social-list social-links">
         <a class="page-footer__item-ig" href="#">
-          <img class="page-footer__image-ig" src="#" width="150" height="150" alt="Инстаграм">
+          <img class="page-footer__image-ig" src="img/icon-insta.svg" width="22" height="22" alt="Инстаграм">
         </a>
         <a class="page-footer__item-fb" href="#">
-          <img class="page-footer__image-fb" src="#" width="150" height="150" alt="Фейсбук">
+          <img class="page-footer__image-fb" src="img/icon-fb.svg" width="22" height="22" alt="Фейсбук">
         </a>
         <a class="page-footer__item-tw" href="#">
-          <img class="page-footer__image-tw" src="#" width="150" height="150" alt="Твиттор">
+          <img class="page-footer__image-tw" src="img/icon-twitter.svg" width="22" height="22" alt="Твиттор">
         </a>
       </div>
       <a class="page-footer__copiright-item" href="https://htmlacademy.ru/intensive/adaptive">Разработано
       </a>
       <a class="page-footer__copiright-item" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="page-footer__copiright-image" src="#" width="150" height="150" alt="Логотип Академии">
+        <img class="page-footer__copiright-image" src="img/logo-htmlacademy.svg" width="22" height="22" alt="Логотип Академии">
       </a>
     </div>
   </footer>

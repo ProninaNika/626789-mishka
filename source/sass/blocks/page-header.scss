@@ -1,0 +1,40 @@
+.page-header {
+  background-color: $white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  width: 320px;
+  position: relative;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__toggle {
+  border: none;
+  box-shadow: none;
+  width: 20px;
+  height: 14px;
+  background: url("../img/icon-menu-open.svg") no-repeat $white;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: $black;
+}
+
+.main-nav__user-link {
+  text-decoration: none;
+  color: $black;
+}
+
+.main-nav__item {
+  list-style-type: none;
+  border-bottom: 1px solid $grey-border;
+}
+
+.main-nav__user-item {
+  list-style-type: none;
+  border-bottom: 1px solid $grey-border;
+}
