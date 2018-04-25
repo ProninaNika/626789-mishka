@@ -3,8 +3,6 @@
   background: url("../img/zigzag-line.png") repeat-x 0 100% $white;
   width: 260px;
   color: $black;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .reviews__title {
@@ -14,9 +12,11 @@
   line-height: 30px;
   font-weight: 700;
   padding-top: 46px;
+  padding-left: 30px;
 }
 
 .reviews__text {
+  width: 260px;
   font-size: 15px;
   line-height: 30px;
   color: $color-text;
@@ -26,12 +26,16 @@
 }
 
 .reviews__author-name {
-  font-style: 17px;
+  display: flex;
+  font-style: normal;
+  width: 260px;
+  font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0;
   padding: 0;
-  padding-top: 27px;
+  padding-top: 37px;
+  padding-bottom: 10px;
 }
 
 .reviews__author-instagram {
@@ -40,18 +44,28 @@
   color: $color-text;
   padding: 0;
   margin: 0;
-  padding-top: 3px;
+  padding-top: 10px;
 }
 
-.reviews__prev,
-.reviews__next {
+.reviews__controls {
+  display: flex;
+}
+
+.review__button {
+  display: flex;
   background: $white;
-  height: 52px;
+  height: 50px;
   border: 1px solid $grey-border;
   width: 130px;
+  padding-left: 40px;
 }
 
 .reviews__write {
+  display: flex;
   margin-top: 38px;
   margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
 }
+
+

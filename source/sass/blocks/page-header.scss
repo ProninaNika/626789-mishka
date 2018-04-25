@@ -1,17 +1,21 @@
 .page-header {
+  width: 100%;
   background-color: $white;
   font-family: "Open Sans", "Arial", sans-serif;
-  width: 320px;
-  position: relative;
 }
 
 .page-header__logo {
+  width: 320px;
+  min-height: 79px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
   border: none;
   box-shadow: none;
   width: 20px;
@@ -19,22 +23,25 @@
   background: url("../img/icon-menu-open.svg") no-repeat $white;
 }
 
-.main-nav__link {
-  text-decoration: none;
-  color: $black;
+.main-nav__list {
+  margin: auto;
+  width: 320px;
 }
 
-.main-nav__user-link {
-  text-decoration: none;
-  color: $black;
+@media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    min-height: 88px;
+    justify-content: flex-start;
+  }
 }
 
-.main-nav__item {
-  list-style-type: none;
-  border-bottom: 1px solid $grey-border;
-}
-
-.main-nav__user-item {
-  list-style-type: none;
-  border-bottom: 1px solid $grey-border;
+@media (min-width: 1150px) {
+  .page-header__logo {
+    width: 200px;
+    justify-content: center;
+  }
 }

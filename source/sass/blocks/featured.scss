@@ -33,3 +33,23 @@
   border: none;
   border-bottom: 1px solid $grey-border;
 }
+
+.featured__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-text;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 65px;
+  margin-bottom: 30px;
+  display: flex;
+
+}
+
+.featured__button {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
