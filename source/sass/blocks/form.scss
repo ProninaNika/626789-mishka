@@ -1,12 +1,9 @@
-.form__title {
-  font-family: "Open Sans", "Arial", sans-serif;
-  padding-top: 50px;
-}
-
 .form__text-header {
-  width: 250px;
+  background: &white;
+  margin: auto;
+  width: 247px;
   color: $color-text;
-  padding-left: 30px;
+  padding-left: 29px;
   padding-right: 40px;
   padding-top: 22px;
   padding-bottom: 24px;
@@ -15,60 +12,511 @@
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
-.form {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  width: 260px;
+.filter-form {
+  padding-bottom: 55px;
   font-family: "Open Sans", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
-.form__fieldset {
-  border: none;
-}
-
-.form__fieldset-title,
-.form__title, {
-  width: 62px;
+.filter-form__legend {
+  position: relative;
+  width: 260px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  color: $mint-lighter;
+  color: #62d1ba;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #62d1ba;
+    width: 197px;
+    left: 63px;
+    top: 50%;
+  }
 }
 
-.form__label,
-.form__text {
-  color: $black;
+.filter-form__fieldset--email .filter-form__legend {
+  position: relative;
+
+  &::after {
+    width: 180px;
+    left: 80px;
+    top: 50%;
+  }
+}
+
+.filter-form__label {
+  position: relative;
+  color: black;
   font-weight: 700;
   line-height: 18px;
   font-size: 17px;
-  align-items: center;
-  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  height: 60px;
   width: 180px;
+  padding-left: 62px;
+
 }
 
-.form__checkbox {
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
-  border: 2px solid $black;
-}
-
-.form__input--radio {
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
-  color: $mint-lighter;
-}
-
-.form__input {
-  width: 260px;
-  padding: 13px 0;
-  color: $color-text;
-  font-size: inherit;
-  line-height: 18px;
-  font-weight: 400;
+.filter-form__text,
+.filter-form__email,
+.filter-form__phone {
   border: none;
-  border-bottom: 2px solid $black;
+  border-bottom: 2px solid black;
+  height: 35px;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 18px;
+  flex-grow: 1;
+  color: #444444;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom-color: #62d1ba;
+  }
+
+  &:active {
+    border-bottom-color: #62d1ba;
+    color: #444444;
+  }
+}
+
+.filter-form__email {
+  background: url("../img/icon-mail.svg") no-repeat 98% 3px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../img/icon-mail-hover.svg");
+  }
+}
+
+.filter-form__phone {
+  background: url("../img/icon-phone.svg") no-repeat 97% 3px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../img/icon-phone-hover.svg");
+  }
+}
+
+.filter-form__wishes {
+  border: 2px solid black;
+  height: 118px;
+  flex-grow: 1;
+  padding: 10px;
+  color: #444444;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #62d1ba;
+    color: #444444;
+  }
+}
+
+.filter-form__description {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+  margin-top: 16px;
+  margin-left: 31px;
+}
+
+.filter-form__radio-button {
+  display: none;
+}
+
+.filter-form__checkbox {
+  display: none;
+}
+
+.filter-form__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &--radio {
+    padding-bottom: 3px;
+  }
+}
+
+.filter-form__fieldset--phone .filter-form__legend,
+.filter-form__fieldset--email .filter-form__legend {
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+
+.filter-form__fieldset--wish .filter-form__legend {
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 25px;
+}
+
+.filter-form__fieldset--checkbox .filter-form__label {
+  height: 35px;
+  padding-bottom: 26px;
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #62d1ba;
+  }
+
+  &:active::before {
+    border-color: #c7c7c7;
+  }
+}
+
+.filter-form__fieldset--radio .filter-form__label:hover::before,
+.filter-form__fieldset--radio .filter-form__label:focus::before {
+  border-color: #62d1ba;
+}
+
+.filter-form__fieldset--radio .filter-form__label:active::before {
+  border-color: #c7c7c7;
+}
+
+.filter-form__fieldset--name {
+  padding-top: 0;
+  flex-direction: column;
+}
+
+.filter-form__fieldset--name .filter-form__label {
+  padding-left: 0;
+  padding-bottom: 9px;
+  height: auto;
+}
+
+.filter-form__fieldset--name .filter-form__legend {
+  margin-bottom: 28px;
+}
+
+.filter-form__button {
+  margin-left: 30px;
+  margin-top: 31px;
+  width: 260px;
+  height: 52px;
+}
+
+.filter-form__radio-button + label::before {
+  content: "";
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #444444;
+  left: 0;
+  top: -9px;
+}
+
+.filter-form__radio-button:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  top: 3px;
+  background-color: #62d1ba;
+  border-radius: 50%;
+}
+
+.filter-form__checkbox + label::before {
+  content: "";
+
+  position: absolute;
+  width: 36px;
+  height: 35px;
+  border: 2px solid #444444;
+  left: 0;
+  top: -11px;
+}
+
+.filter-form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 30px;
+  left: 10px;
+  top: -9px;
+  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+}
+
+@media (min-width: 768px) {
+  .form__text-header {
+    width: 668px;
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 74px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .filter-form {
+    padding-bottom: 50px;
+  }
+
+  .filter-form__fieldset {
+    padding-left: 50px;
+    justify-content: flex-end;
+
+    &--radio {
+      padding-bottom: 11px;
+    }
+  }
+
+  .filter-form__radio-button + label::before {
+    width: 46px;
+    height: 46px;
+    top: -15px;
+    left: 3px;
+  }
+
+  .filter-form__radio-button:checked + label::after {
+    width: 21px;
+    height: 21px;
+    left: 18px;
+    top: -1px;
+  }
+
+  .filter-form__label {
+    font-size: 19px;
+    line-height: 18px;
+    width: 440px;
+    padding-left: 82px;
+    height: 75px;
+  }
+
+  .filter-form__legend {
+    width: 165px;
+    margin-bottom: 55px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .filter-form__fieldset--checkbox {
+    padding-top: 67px;
+    padding-bottom: 10px;
+    padding-right: 28px;
+  }
+
+  .filter-form__fieldset--checkbox .filter-form__label {
+    width: 181px;
+    margin-bottom: 15px;
+    padding-left: 80px;
+  }
+
+  .filter-form__checkbox + label::before {
+    width: 50px;
+    height: 48px;
+    left: 0;
+    top: -16px;
+  }
+
+  .filter-form__checkbox:checked + label::after {
+    width: 33px;
+    top: -5px;
+  }
+
+  .filter-form__fieldset--name {
+    padding-top: 67px;
+    padding-bottom: 9px;
+    flex-direction: row;
+    padding-right: 50px;
+  }
+
+  .filter-form__fieldset--name .filter-form__label {
+    width: auto;
+    padding-right: 25px;
+    padding-left: 3px;
+
+    &:not(:first-of-type) {
+      padding-left: 168px;
+    }
+  }
+
+  .filter-form__text {
+    margin-top: -7px;
+    margin-bottom: 41px;
+    padding-left: 15px;
+    height: 32px;
+    font-size: 19px;
+    line-height: 18px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
+  .filter-form__fieldset--phone {
+    margin-top: 59px;
+    margin-bottom: 13px;
+    padding-right: 50px;
+  }
+
+  .filter-form__fieldset--phone .filter-form__legend,
+  .filter-form__fieldset--email .filter-form__legend {
+    margin-top: 9px;
+  }
+
+  .filter-form__fieldset--email {
+    padding-right: 50px;
+    padding-bottom: 30px;
+  }
+
+  .filter-form__email,
+  .filter-form__phone {
+    background-color: #f1f1f1;
+    height: 33px;
+    padding-left: 15px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
+  .filter-form__fieldset--wish {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 46px;
+  }
+
+  .filter-form__description {
+    padding-left: 389px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .filter-form__button {
+    width: 230px;
+    margin-left: 50px;
+    margin-top: -39px;
+  }
+
+  .filter-form__email {
+    background-position: 99% 3px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .filter-form__phone {
+    background-position: 99% 3px;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .filter-form__fieldset--wish .filter-form__legend {
+    padding-top: 5px;
+    padding-right: 3px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .form__text-header {
+    width: 700px;
+    padding-top: 118px;
+    padding-bottom: 74px;
+  }
+
+  .filter-form__fieldset--radio {
+    padding-right: 404px;
+  }
+
+  .filter-form__fieldset--radio .filter-form__legend {
+    width: 109px;
+  }
+
+  .filter-form__fieldset--checkbox {
+    padding-right: 137px;
+    padding-top: 66px;
+    padding-bottom: 9px;
+  }
+
+  .filter-form__fieldset--checkbox .filter-form__legend {
+    width: 116px;
+    padding-left: 0;
+  }
+
+  .filter-form__fieldset--checkbox .filter-form__label {
+    width: 182px;
+  }
+
+  .filter-form__fieldset--name {
+    padding-right: 224px;
+  }
+
+  .filter-form__text {
+    min-width: 455px;
+  }
+
+  .filter-form__fieldset--name .filter-form__legend {
+    padding-left: 62px;
+    width: 113px;
+  }
+
+  .filter-form__fieldset--name .filter-form__label:not(:first-of-type) {
+    padding-left: 178px;
+  }
+
+  .filter-form__fieldset--phone {
+    margin-top: 60px;
+  }
+
+  .filter-form__fieldset--phone .filter-form__legend,
+  .filter-form__fieldset--email .filter-form__legend,
+  .filter-form__fieldset--wish .filter-form__legend {
+    padding-left: 63px;
+    width: 113px;
+  }
+
+  .filter-form__fieldset--phone,
+  .filter-form__fieldset--email,
+  .filter-form__fieldset--wish {
+    padding-right: 223px;
+  }
+
+  .filter-form__fieldset--wish .filter-form__legend {
+    padding-top: 4px;
+  }
+
+  .filter-form__fieldset--wish {
+    padding-bottom: 41px;
+  }
+
+  .filter-form__description {
+    padding-left: 598px;
+    margin-top: 17px;
+  }
+
+  .filter-form__button {
+    margin-left: 226px;
+  }
 }
