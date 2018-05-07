@@ -56,6 +56,8 @@
   height: 52px;
   border: 1px solid $grey-border;
   width: 130px;
+  padding: 0;
+  padding-right: 14px;
 
   &--previous {
     border-right: none;
@@ -71,27 +73,35 @@
 }
 
 .reviews__write {
-  margin-top: 38px;
+  margin-top: 37px;
   margin-bottom: 50px;
   font-size: 18px;
 }
 
 @media (min-width: 768px) {
   .reviews {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0;
     padding-top: 30px;
-    padding-bottom: 123px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     background: url("../img/review@1x.jpg") no-repeat 0 0;
   }
 
+  .review__slider {
+    padding-bottom: 135px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 20px;
+    background-position: 20px 100%;
+  }
+
   .reviews__title {
     font-size: 43px;
     line-height: 50px;
-    margin-left: -3px;
+    margin-left: 45px;
     order: -1;
     padding-top: 48px;
   }
@@ -104,19 +114,21 @@
 
   .reviews__write {
     order: -1;
-    margin-top: 50px;
+    margin-top: 49px;
     margin-bottom: 21px;
     width: 171px;
+    margin-right: 50px;
   }
 
   .reviews__controls {
     width: 175px;
     margin-left: auto;
-    margin-top: -53px;
+    margin-top: -54px;
   }
 
   .reviews__button {
     border: none;
+    padding-left: 14px;
   }
 
   .reviews__author-name {
@@ -134,11 +146,21 @@
     background: url("../img/review@1x.jpg") no-repeat 50px 0;
   }
 
+  .review__slider {
+    padding-left: 175px;
+    padding-bottom: 185px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: auto 21px;
+    background-position: 27px 100%;
+  }
+
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
     order: -1;
     padding-top: 0;
+    margin-left: 125px;
   }
 
   .reviews__item {
@@ -159,6 +181,7 @@
   .reviews__write {
     margin-top: 10px;
     margin-bottom: 0;
+    margin-right: 0;
   }
 
   .reviews__author-name {
