@@ -108,6 +108,7 @@
   .promo {
     width: 1150px;
     display: flex;
+    padding-left: 100px;
   }
 
   .promo__wrapper {
@@ -118,5 +119,6 @@
   .promo__link {
     width: 490px;
     min-height: 98px;
+    padding-left: 35px;
   }
 }

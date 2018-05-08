@@ -91,7 +91,7 @@
           <p class="featured__description">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
-          <table class="featured__list">
+          <table class="featured__characteristics">
             <tr>
               <td class="featured__value">Цвет</td>
               <td class="featured__field">&#171;Тиффани&#171;/серый</td>
@@ -105,10 +105,18 @@
               <td class="featured__field">15 см</td>
             </tr>
           </table>
-          <img class="featured__item-image" src="img/triple-set-mobile@1x.jpg" width="260" height="320" alt="Вязанные корзинки">
+          <picture class="featured__image">
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp, img/triple-set-mobile@2x.webp 2x">
+            
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фотография товара">
+          </picture>
           <p class="featured__price">Цена: 990 руб.</p>
           <a class="featured__button button" href="modal.html">заказать</a>
-          </div>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="advantages__header">Коротко о нас:</h2>
@@ -119,11 +127,11 @@
           </li>
           <li class="advantages__item advantages__item--like">Увеличивает лайки<br> на фотографиях
           </li>
-          <li class="advantages__item advantages__item--handmade">Связано вручную с любовью и умилением
+          <li class="advantages__item advantages__item--handmade">Связано вручную с<br> любовью и умилением
           </li>
-          <li class="advantages__item advantages__item--domestic">Поддержка отечественного производителя
+          <li class="advantages__item advantages__item--domestic">Поддержка отечественного<br> производителя
           </li>
-          <li class="advantages__item advantages__item--gift">Поставляется в подарочной упаковке
+          <li class="advantages__item advantages__item--gift">Поставляется в <br>подарочной упаковке
           </li>
         </ul>
     </section>
@@ -167,8 +175,7 @@
             <li class="contacts__parametr contacts__cell">адрес:</li>
             <li class="contacts__value contacts__cell">
             г. Санкт-Петербург,
-            <br>ул. Большая
-            <br>Конюшенная,
+            <br>ул. Большая Конюшенная,
             <br>д. 19/8, офис 101</li>
           </ul>
         </div>

@@ -4,7 +4,6 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 31px;
-  font-family: "Open Sans", "Arial", sans-serif;
   background-color: $white;
 }
 
@@ -157,7 +156,7 @@
 
 @media (min-width: 1150px) {
   .product {
-    width: 1150px;
+    width: 1052px;
     padding: 0;
     padding-bottom: 57px;
     padding-top: 127px;
@@ -203,5 +202,9 @@
 
   .product__item-description {
     padding-top: 5px;
+  }
+
+  .catalog__cart-image {
+    padding-bottom: 6px;
   }
 }

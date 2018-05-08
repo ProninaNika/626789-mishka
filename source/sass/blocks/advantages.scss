@@ -1,7 +1,6 @@
 .advantages {
   padding: 0 30px;
   padding-bottom: 10px;
-  font-family: "Open Sans", "Arial", sans-serif;
   color: $black;
 }
 
@@ -10,9 +9,11 @@
   padding: 0;
   padding-top: 28px;
   font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
+  padding-bottom: 3px;
   margin-left: -2px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .advantages__list {
@@ -96,13 +97,12 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 45px;
-    padding-bottom: 55px;
+    padding-bottom: 50px;
   }
 
   .advantages__list {
     height: 465px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
   }
 
@@ -119,19 +119,47 @@
     line-height: 22px;
     width: 334px;
     margin-bottom: 28px;
+
+    &--eco {
+      order: -5;
+    }
+
+    &--scandinavian {
+      order: -2;
+    }
+
+    &----like {
+      order: -3;
+    }
+
+    &--handmade {
+      order: -4;
+    }
+
+    &--domestic {
+      order: -1;
+    }
+
+    &--gift {
+      order: 0;
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .advantages {
     width: 700px;
-    padding-top: 57px;
-    padding-left: 175px;
+    padding-top: 32px;
+    padding-left: 226px;
     padding-bottom: 62px;
   }
 
   .advantages__header {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .advantages__item {
+    width: 350px;
   }
 }
