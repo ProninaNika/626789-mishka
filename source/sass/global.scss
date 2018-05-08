@@ -1,21 +1,26 @@
 @font-face {
+  font-weight: normal;
   font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+
   src: url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: 700;
   font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+
   src: url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
 }
 
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -25,4 +30,8 @@
   border: 0;
 
   clip: rect(0 0 0 0);
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
 }
