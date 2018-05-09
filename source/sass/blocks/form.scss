@@ -1,17 +1,3 @@
-.form__text-header {
-  background: &white;
-  margin: auto;
-  width: 247px;
-  color: $color-text;
-  padding-left: 29px;
-  padding-right: 40px;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-}
-
 .filter-form {
   padding-bottom: 55px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -25,7 +11,7 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
-  color: #62d1ba;
+  color: $mint-lighter;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -35,7 +21,7 @@
     content: "";
     position: absolute;
     height: 2px;
-    background-color: #62d1ba;
+    background-color: $mint-lighter;
     width: 197px;
     left: 63px;
     top: 50%;
@@ -44,6 +30,9 @@
 
 .filter-form__fieldset--email .filter-form__legend {
   position: relative;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 11px;
 
   &::after {
     width: 180px;
@@ -54,7 +43,7 @@
 
 .filter-form__label {
   position: relative;
-  color: black;
+  color: $black;
   font-weight: 700;
   line-height: 18px;
   font-size: 17px;
@@ -70,13 +59,13 @@
 .filter-form__phone {
   border: none;
   border-bottom: 2px solid black;
-  height: 35px;
+  height: 38px;
   padding-bottom: 7px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-size: 17px;
   line-height: 18px;
   flex-grow: 1;
-  color: #444444;
+  color: $color-text;
 
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
@@ -84,17 +73,17 @@
 
   &:hover,
   &:focus {
-    border-bottom-color: #62d1ba;
+    border-bottom-color: $mint-lighter;
   }
 
   &:active {
-    border-bottom-color: #62d1ba;
-    color: #444444;
+    border-bottom-color: $mint-lighter;
+    color: $color-text;
   }
 }
 
 .filter-form__email {
-  background: url("../img/icon-mail.svg") no-repeat 98% 3px;
+  background: url("../img/icon-mail.svg") no-repeat 98% 7px;
 
   &:hover,
   &:focus,
@@ -104,7 +93,7 @@
 }
 
 .filter-form__phone {
-  background: url("../img/icon-phone.svg") no-repeat 97% 3px;
+  background: url("../img/icon-phone.svg") no-repeat 97% 7px;
 
   &:hover,
   &:focus,
@@ -118,7 +107,7 @@
   height: 118px;
   flex-grow: 1;
   padding: 10px;
-  color: #444444;
+  color: $color-text;
 
   &::placeholder {
     color: rgba(68, 68, 68, 0.3);
@@ -126,12 +115,12 @@
 
   &:hover,
   &:focus {
-    border-color: #62d1ba;
+    border-color: $mint-lighter;
   }
 
   &:active {
-    border-color: #62d1ba;
-    color: #444444;
+    border-color: $mint-lighter;
+    color: $color-text;
   }
 }
 
@@ -140,7 +129,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 16px;
-  color: #444444;
+  color: $color-text;
   margin-top: 16px;
   margin-left: 31px;
 }
@@ -160,20 +149,20 @@
   padding-right: 30px;
 
   &--radio {
-    padding-bottom: 3px;
+    padding-bottom: 0;
   }
 }
 
 .filter-form__fieldset--phone .filter-form__legend,
 .filter-form__fieldset--email .filter-form__legend {
   margin: 0;
-  margin-top: 12px;
-  margin-bottom: 15px;
+  margin-top: 8px;
+  margin-bottom: 11px;
 }
 
 .filter-form__fieldset--wish .filter-form__legend {
   margin: 0;
-  margin-top: 12px;
+  margin-top: 10px;
   margin-bottom: 25px;
 }
 
@@ -183,7 +172,7 @@
 
   &:hover::before,
   &:focus::before {
-    border-color: #62d1ba;
+    border-color: $mint-lighter;
   }
 
   &:active::before {
@@ -193,7 +182,7 @@
 
 .filter-form__fieldset--radio .filter-form__label:hover::before,
 .filter-form__fieldset--radio .filter-form__label:focus::before {
-  border-color: #62d1ba;
+  border-color: $mint-lighter;
 }
 
 .filter-form__fieldset--radio .filter-form__label:active::before {
@@ -207,12 +196,12 @@
 
 .filter-form__fieldset--name .filter-form__label {
   padding-left: 0;
-  padding-bottom: 9px;
+  padding-bottom: 4px;
   height: auto;
 }
 
 .filter-form__fieldset--name .filter-form__legend {
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .filter-form__button {
@@ -228,7 +217,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 2px solid #444444;
+  border: 2px solid $color-text;
   left: 0;
   top: -9px;
 }
@@ -240,7 +229,7 @@
   height: 16px;
   left: 12px;
   top: 3px;
-  background-color: #62d1ba;
+  background-color: $mint-lighter;
   border-radius: 50%;
 }
 
@@ -249,7 +238,7 @@
   position: absolute;
   width: 36px;
   height: 35px;
-  border: 2px solid #444444;
+  border: 2px solid $color-text;
   left: 0;
   top: -11px;
 }
@@ -265,15 +254,6 @@
 }
 
 @media (min-width: 768px) {
-  .form__text-header {
-    width: 668px;
-    padding: 0;
-    padding-top: 70px;
-    padding-bottom: 74px;
-    font-size: 17px;
-    line-height: 30px;
-  }
-
   .filter-form {
     padding-bottom: 50px;
   }
@@ -311,7 +291,6 @@
 
   .filter-form__legend {
     width: 165px;
-    margin-bottom: 55px;
 
     &::after {
       display: none;
@@ -363,9 +342,10 @@
     margin-top: -7px;
     margin-bottom: 41px;
     padding-left: 15px;
-    height: 32px;
+    height: 29px;
     font-size: 19px;
     line-height: 18px;
+    padding-bottom: 10px;
 
     &::placeholder {
       font-size: 19px;
@@ -375,25 +355,26 @@
 
   .filter-form__fieldset--phone {
     margin-top: 59px;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
     padding-right: 50px;
   }
 
   .filter-form__fieldset--phone .filter-form__legend,
   .filter-form__fieldset--email .filter-form__legend {
-    margin-top: 9px;
+    margin-top: 7px;
   }
 
   .filter-form__fieldset--email {
     padding-right: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
   }
 
   .filter-form__email,
   .filter-form__phone {
     background-color: #f1f1f1;
-    height: 33px;
-    padding-left: 15px;
+    height: 30px;
+    padding-left: 18px;
+    padding-bottom: 10px;
 
     &::placeholder {
       font-size: 19px;
@@ -420,32 +401,26 @@
   }
 
   .filter-form__email {
-    background-position: 99% 3px;
+    background-position: 95% 3px;
     font-size: 19px;
     line-height: 18px;
   }
 
   .filter-form__phone {
-    background-position: 99% 3px;
+    background-position: 95% 3px;
     font-size: 19px;
     line-height: 18px;
   }
 
   .filter-form__fieldset--wish .filter-form__legend {
-    padding-top: 5px;
+    padding-top: 7px;
     padding-right: 3px;
   }
 }
 
 @media (min-width: 1150px) {
-  .form__text-header {
-    width: 700px;
-    padding-top: 118px;
-    padding-bottom: 74px;
-  }
-
   .filter-form__fieldset--radio {
-    padding-right: 404px;
+    padding-right: 405px;
   }
 
   .filter-form__fieldset--radio .filter-form__legend {
@@ -453,7 +428,7 @@
   }
 
   .filter-form__fieldset--checkbox {
-    padding-right: 137px;
+    padding-right: 138px;
     padding-top: 66px;
     padding-bottom: 9px;
   }
@@ -468,11 +443,13 @@
   }
 
   .filter-form__fieldset--name {
-    padding-right: 224px;
+    padding-right: 225px;
   }
 
   .filter-form__text {
     min-width: 455px;
+    height: 30px;
+    margin-bottom: 40px;
   }
 
   .filter-form__fieldset--name .filter-form__legend {
@@ -491,18 +468,24 @@
   .filter-form__fieldset--phone .filter-form__legend,
   .filter-form__fieldset--email .filter-form__legend,
   .filter-form__fieldset--wish .filter-form__legend {
-    padding-left: 63px;
+    padding-left: 113px;
     width: 113px;
   }
 
   .filter-form__fieldset--phone,
   .filter-form__fieldset--email,
   .filter-form__fieldset--wish {
-    padding-right: 223px;
+    padding-right: 224px;
+    padding-left: 0;
+  }
+
+  .filter-form__fieldset--email .filter-form__legend {
+    padding-top: 2px;
   }
 
   .filter-form__fieldset--wish .filter-form__legend {
-    padding-top: 4px;
+    padding-top: 6px;
+    padding-right: 0;
   }
 
   .filter-form__fieldset--wish {
@@ -510,11 +493,21 @@
   }
 
   .filter-form__description {
-    padding-left: 598px;
-    margin-top: 17px;
+    padding-left: 596px;
+    margin-top: 11px;
   }
 
   .filter-form__button {
-    margin-left: 226px;
+    margin-left: 230px;
+  }
+
+  .filter-form__email {
+    padding-left: 15px;
+    background-position: 99% 3px;
+  }
+
+  .filter-form__phone {
+    padding-left: 15px;
+    background-position: 99% 3px;
   }
 }

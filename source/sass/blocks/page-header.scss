@@ -1,12 +1,10 @@
 .page-header {
   width: 100%;
-  background-color: white;
-  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: $white;
 }
 
 .page-header__logo {
   width: 320px;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }

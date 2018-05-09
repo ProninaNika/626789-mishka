@@ -1,8 +1,7 @@
 .video-block {
-  font-family: "Open Sans", "Arial", sans-serif;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 58px;
 
   &:hover {
     box-shadow: 0 7px 7px 0 $grey-border;
@@ -43,7 +42,7 @@
   margin: 0;
   padding-left: 33px;
   padding-right: 40px;
-  padding-top: 28px;
+  padding-top: 26px;
   font-size: 13px;
   line-height: 24px;
   color: $color-text;
@@ -54,12 +53,17 @@
   justify-content: center;
   align-items: center;
   height: 150px;
-  background: url("../img/video-mobile@1x.jpg") no-repeat 50% 100%;
+  background: url("../img/video-mobile@1x.jpg");
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+    background-size: 260px auto;
+  }
 }
 
 .video-block__button {
   width: 188px;
-  margin-top: 26px;
+  margin-top: 25px;
   margin-bottom: 31px;
   align-self: center;
 }
@@ -99,15 +103,22 @@
   }
 
   .video-block__video-container {
+    width: 668px;
     order: -1;
     height: 455px;
+    background: url("../img/video-tablet@1x.jpg") no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 668px auto;
+    }
   }
 
   .video-block__title {
     font-size: 20px;
     line-height: 24px;
     padding-left: 105px;
-    padding-top: 35px;
+    padding-top: 37px;
     min-height: 30px;
     border-bottom: none;
 
@@ -136,7 +147,9 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 453px;
-    margin-bottom: 106px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .video-block__title {
@@ -144,7 +157,7 @@
     line-height: 24px;
     width: 235px;
     padding-top: 95px;
-    padding-left: 79px;
+    padding-left: 77px;
     padding-right: 54px;
 
     &::before {
@@ -154,7 +167,7 @@
   }
 
   .video-block__description {
-    padding-left: 79px;
+    padding-left: 77px;
     font-size: 15px;
     line-height: 30px;
     padding-top: 33px;
@@ -164,7 +177,7 @@
     width: 226px;
     margin-top: 46px;
     margin-bottom: 57px;
-    margin-left: 23px;
+    margin-left: 21px;
   }
 
   .video-block__description-block {
@@ -174,5 +187,11 @@
   .video-block__video-container {
     height: 455px;
     width: 682px;
+    background: url("../img/video-desktop@1x.jpg") no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/video-tablet@2x.jpg");
+      background-size: 682px auto;
+    }
   }
 }
