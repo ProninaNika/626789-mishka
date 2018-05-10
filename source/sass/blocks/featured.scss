@@ -3,13 +3,15 @@
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 41px;
-  background: url("../img/zigzag-line.png") repeat-x 100% 100% white;
+
+  background: url("../img/zigzag-line.png") repeat-x 100% 100% $white;
 }
 
 .featured__header {
   margin: 0;
   padding: 0;
   padding-top: 7px;
+
   color: $black;
   font-size: 25px;
   line-height: 30px;
@@ -18,6 +20,7 @@
 
 .featured__explanation {
   margin-top: 5px;
+
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
@@ -42,12 +45,13 @@
   border-collapse: collapse;
   font-size: 15px;
   line-height: 20px;
-  color: #444444;
+  color: $color-text;
   background-color: $white;
 }
 
 .featured__value {
   width: 98px;
+
   border-bottom: 1px solid $grey-border;
 }
 
@@ -55,6 +59,7 @@
   width: 165px;
   height: 38px;
   border: none;
+  
   border-bottom: 1px solid $grey-border;
 }
 
