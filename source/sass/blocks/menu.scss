@@ -24,20 +24,12 @@
   &:active {
     opacity: 0.3;
   }
-
-  &--search {
-    position: relative;
-  }
-
-  &--cart {
-    position: relative;
-  }
 }
 
 .menu__link--search {
   ::before {
     content: "";
-    position: absolute;
+    position: relative;
     width: 18px;
     height: 18px;
     background: url(../img/icon-search.svg) no-repeat;
@@ -50,7 +42,7 @@
 .menu__link--cart {
   ::before {
     content: "";
-    position: absolute;
+    position: relative;
     width: 21px;
     height: 19px;
     background: url(../img/icon-cart.svg) no-repeat;
@@ -106,6 +98,7 @@
   .menu--close .menu__interactive {
     display: none;
   }
+}
 
   .menu .menu__interactive {
     display: flex;
