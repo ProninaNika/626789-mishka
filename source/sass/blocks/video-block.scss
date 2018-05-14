@@ -1,8 +1,4 @@
 .video-block {
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 58px;
-
   &:hover {
     box-shadow: 0 7px 7px 0 $grey-border;
   }
@@ -148,10 +144,8 @@
     flex-wrap: wrap;
     height: 453px;
     margin-bottom: 50px;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 193px;
-    width: 500px;
+    margin-left: 185px;
+    margin-right: 187px;
   }
 
   .video-block__title {

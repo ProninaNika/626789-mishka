@@ -1,7 +1,6 @@
 .menu__list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -9,15 +8,13 @@
   display: block;
   padding-top: 26px;
   padding-bottom: 28px;
-  padding-left: 75px;
-
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+  border-top: 1px solid #ececec;
+  padding-left: 75px;
   text-decoration: none;
-  color: $black;
-
-  border-top: 1px solid $grey-border;
+  color: black;
 
   &:hover,
   &:focus {
@@ -37,29 +34,52 @@
   }
 }
 
+.menu__link--search {
+  ::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url(../img/icon-search.svg) no-repeat;
+    left: 33px;
+    top: 32px;
+    opacity: 0.2;
+  }
+}
+
+.menu__link--cart {
+  ::before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 19px;
+    background: url(../img/icon-cart.svg) no-repeat;
+    left: 30px;
+    top: 32px;
+    opacity: 0.2;
+  }
+}
+
 .menu__interactive {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .menu__offer {
   margin: 0;
   padding: 0;
-  display: none;
-
   list-style: none;
+  display: none;
 }
 
 .menu__delivery {
+  color: #444444;
+  font-size: 15px;
+  line-height: 24px;
   align-self: flex-end;
   padding-right: 50px;
   display: none;
-
-  color: $color-text;
-  font-size: 15px;
-  line-height: 24px;
 }
 
 .menu--close .menu__list,
@@ -71,23 +91,14 @@
   position: absolute;
   top: 32px;
   left: 30px;
-
-  fill: rgba(0, 0, 0, 0.2);
 }
 
-.menu__link--search:hover .menu__icon-search,
-.menu__link--search:focus .menu__icon-search,
-.menu__link--cart:hover .menu__icon-cart,
-.menu__link--cart:focus .menu__icon-cart {
-  fill: $mint-lighter;
-}
+
 
 .menu__icon-search {
   position: absolute;
   top: 32px;
   left: 33px;
-
-  fill: rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -106,16 +117,14 @@
   }
 
   .menu .menu__list {
-    z-index: 10;
-
     order: 2;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
   }
 
   .menu__link {
     border: none;
-
     display: flex;
   }
 
@@ -141,25 +150,23 @@
   }
 
   .menu__interactive .menu__link {
-    border-left: 1px solid $grey-border;
+    border-left: 1px solid #ececec;
   }
 
   .menu__list .menu__link {
     font-size: 15px;
-
     padding: 0;
     padding-top: 16px;
     padding-right: 37px;
   }
 
   .menu__delivery {
-    z-index: 10;
-
     display: block;
     padding-right: 0;
     order: 3;
     align-self: flex-start;
     padding-top: 1px;
+    z-index: 10;
   }
 }
 
@@ -169,17 +176,15 @@
   }
 
   .menu__list .menu__link {
+    font-size: 17px;
+    line-height: 24px;
     min-width: 185px;
     margin-right: 0;
     padding-top: 32px;
     padding-bottom: 33px;
 
-    font-size: 17px;
-    line-height: 24px;
-
     &--border {
-      border-right: 1px solid $grey-border;
-
+      border-right: 1px solid #ececec;
       margin-right: 33px;
       padding-right: 0;
     }
@@ -187,7 +192,6 @@
 
   .menu__offer {
     display: flex;
-
     z-index: 10;
   }
 
