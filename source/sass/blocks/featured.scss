@@ -93,7 +93,7 @@
     padding-right: 50px;
     padding-left: 50px;
     padding-top: 35px;
-    padding-bottom: 0;
+    padding-bottom: -1px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-size: 768px 20px;
@@ -198,7 +198,7 @@
     width: 525px;
     height: 636px;
     top: 37px;
-    right: 0;
+    right: 49px;
   }
 
   .featured__description {
