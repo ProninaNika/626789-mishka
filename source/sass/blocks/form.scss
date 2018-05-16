@@ -1,6 +1,5 @@
 .filter-form {
   padding-bottom: 55px;
-  font-family: "Open Sans", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -58,7 +57,7 @@
 .filter-form__email,
 .filter-form__phone {
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid $black;
   height: 38px;
   padding-bottom: 7px;
   margin-bottom: 22px;
@@ -82,7 +81,7 @@
   }
 }
 
-.filter-form__email {
+/*.filter-form__email {
   background: url("../img/icon-mail.svg") no-repeat 98% 7px;
 
   &:hover,
@@ -100,9 +99,32 @@
   &:active {
     background-image: url("../img/icon-phone-hover.svg");
   }
+}*/
+.filter-form__phone,
+.filter-form__email {
+  padding-right: 40px;
+  margin-right: -26px;
+  background-color: $light-grey;
+  fill: #f1f1f1;
+}
+
+.filter-form__mail-image,
+.filter-form__phone-image {
+  fill: #cccccc;
+}
+
+.filter-form__phone:hover + .filter-form__icon-phone .filter-form__phone-image,
+.filter-form__phone:focus + .filter-form__icon-phone .filter-form__phone-image,
+.filter-form__phone:active + .filter-form__icon-phone .filter-form__phone-image,
+.filter-form__email:hover + .filter-form__icon-mail .filter-form__mail-image,
+.filter-form__email:focus + .filter-form__icon-mail .filter-form__mail-image,
+.filter-form__email:active + .filter-form__icon-mail .filter-form__mail-image {
+  fill: #62d1ba;
 }
 
 .filter-form__wishes {
+  font-size: 18px;
+  line-height: 20px;
   border: 2px solid black;
   height: 118px;
   flex-grow: 1;
@@ -371,7 +393,6 @@
 
   .filter-form__email,
   .filter-form__phone {
-    background-color: #f1f1f1;
     height: 30px;
     padding-left: 18px;
     padding-bottom: 10px;
