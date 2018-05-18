@@ -118,7 +118,7 @@
             </a>
           </li>
         </ul>
-        <button class="page-header__button humburger" type="button" name="hamburger">
+        <button class="page-header__button humburger visually-hidden" type="button" name="hamburger">
         </button>
         <ul class="menu__offer">
           <li class="menu__item">
@@ -282,5 +282,26 @@
         </div>
       </div>
     </footer>
+    <section class="modal-window modal-window--close">
+      <form class="modal-window__form" method = "post" action = "https://echo.htmlacademy.ru">
+        <h2 class="modal-window__header">Добавить в корзину</h2>
+        <p class="modal-window__description">
+          Выберите размер:
+        </p>
+        <div class="modal-window__size-block">
+          <input type="radio" class="modal-window__radio" checked value="s" name="size" id="size-s">
+          <label class="modal-window__label" for="size-s">S</label>
+          <input type="radio" class="modal-window__radio" value="m" name="size" id="size-m">
+          <label class="modal-window__label" for="size-m">M</label>
+          <input type="radio" class="modal-window__radio" value="l" name="size" id="size-l">
+          <label class="modal-window__label" for="size-l">L</label>
+        </div>
+        <button class="modal-window__button button" type="submit">
+          Добавить
+        </button>
+      </form>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>
