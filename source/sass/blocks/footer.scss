@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
+  padding-top: 23px;
 }
 
 .footer__social-list {
@@ -105,6 +106,8 @@
     flex-direction: row;
     justify-content: space-between;
     min-height: 145px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .footer__logo {
@@ -144,5 +147,7 @@
 @media (min-width: 1150px) {
   .footer__wrapper {
     width: 1050px;
+    margin-top: -2px;
+    padding-top: 0;
   }
 }

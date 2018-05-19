@@ -37,7 +37,7 @@ gulp.task("serve", function() {
   gulp.watch("source/*.html", ["html"]);
 
 });
- 
+
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
@@ -78,5 +78,3 @@ gulp.task("copy", function () {
 gulp.task("clean", function () {
   return del("build");
 });
-
-

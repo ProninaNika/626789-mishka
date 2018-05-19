@@ -81,25 +81,6 @@
   }
 }
 
-/*.filter-form__email {
-  background: url("../img/icon-mail.svg") no-repeat 98% 7px;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-image: url("../img/icon-mail-hover.svg");
-  }
-}
-
-.filter-form__phone {
-  background: url("../img/icon-phone.svg") no-repeat 97% 7px;
-
-  &:hover,
-  &:focus,
-  &:active {
-    background-image: url("../img/icon-phone-hover.svg");
-  }
-}*/
 .filter-form__phone,
 .filter-form__email {
   padding-right: 40px;
@@ -152,7 +133,7 @@
   font-size: 14px;
   line-height: 16px;
   color: $color-text;
-  margin-top: 16px;
+  margin-top: 11px;
   margin-left: 31px;
 }
 

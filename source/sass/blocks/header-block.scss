@@ -29,15 +29,6 @@
   align-self: center;
 }
 
-/*.header-block__delivery {
-  color: $color-text;
-  font-size: 15px;
-  line-height: 24px;
-  align-self: flex-end;
-  padding-right: 50px;
-  display: none;
-}*/
-
 @media (min-width: 768px) {
   .header-block {
     width: 768px;
@@ -86,6 +77,7 @@
     width: 620px;
     font-size: 53px;
     line-height: 57px;
+    margin-top: 90px;
   }
 
   .header-block--index .header-block__header {
