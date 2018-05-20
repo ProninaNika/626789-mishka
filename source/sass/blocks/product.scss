@@ -36,10 +36,6 @@
   color: $black;
 }
 
-.product__price-block:nth-child(1) {
-  margin-top: 20px;
-}
-
 .product__price-block {
   display: flex;
   width: 205px;
@@ -48,6 +44,10 @@
   min-height: 72px;
   align-items: center;
   margin-top: 19px;
+}
+
+.product__price-block:nth-child(1) {
+  margin-top: 50px;
 }
 
 .product__cart-image {

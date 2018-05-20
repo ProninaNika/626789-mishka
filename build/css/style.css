@@ -818,9 +818,6 @@ body {
   padding-right: 28px;
   color: #000000; }
 
-.product__price-block:nth-child(1) {
-  margin-top: 20px; }
-
 .product__price-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -835,6 +832,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 19px; }
+
+.product__price-block:nth-child(1) {
+  margin-top: 50px; }
 
 .product__cart-image {
   opacity: 0.2;
@@ -1307,7 +1307,6 @@ body {
 .filter-form__email {
   padding-right: 40px;
   margin-right: -26px;
-  background-color: #f1f1f1;
   fill: #f1f1f1; }
 
 .filter-form__mail-image,
@@ -1551,7 +1550,8 @@ body {
   .filter-form__phone {
     height: 30px;
     padding-left: 18px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    background-color: #f1f1f1; }
     .filter-form__email::-webkit-input-placeholder,
     .filter-form__phone::-webkit-input-placeholder {
       font-size: 19px;
