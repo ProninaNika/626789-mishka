@@ -80,7 +80,6 @@ body {
 .featured__field {
   width: 165px;
   height: 38px;
-  border: none;
   border-bottom: 1px solid #ececec; }
 
 .featured__image {
@@ -1131,7 +1130,7 @@ body {
     width: 668px;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 70px;
+    padding-top: 58px;
     padding-left: 45px;
     position: relative; }
     .contacts__title::before {
