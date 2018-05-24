@@ -3,7 +3,6 @@
   flex-direction: column;
   background: $white;
   font-family: "Open Sans", "Arial", sans-serif;
-  max-height: 895px;
 }
 
 .contacts__title {
@@ -82,8 +81,8 @@
 
 .contacts__button {
   margin: auto;
-  margin-top: 39px;
-  margin-bottom: 39px;
+  margin-top: 27px;
+  margin-bottom: 27px;
   font-size: 18px;
 }
 
@@ -103,7 +102,7 @@
     width: 668px;
     font-size: 43px;
     line-height: 50px;
-    padding-top: 58px;
+    padding-top: 70px;
     padding-left: 45px;
     position: relative;
 
@@ -147,7 +146,7 @@
   }
 
   .contacts__button {
-    margin-top: 57px;
+    margin-top: 45px;
     font-size: 17px;
     width: 226px;
   }
@@ -197,7 +196,7 @@
   }
 
   .contacts__button {
-    margin-top: 39px;
+    margin-top: 15px;
     margin-left: 175px;
   }
 }

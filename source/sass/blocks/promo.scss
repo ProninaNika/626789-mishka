@@ -93,6 +93,11 @@
     padding-left: 35px;
   }
 
+  .promo__item:hover {
+    transform: translateY(-10px);
+    transition: .2s;
+  }
+
   .promo__item--interior .promo__link::after {
     top: 29px;
     right: 36px;
