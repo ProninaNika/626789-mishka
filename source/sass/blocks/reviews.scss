@@ -1,5 +1,5 @@
 .reviews {
-  background: url("../img/zigzag-line.png") repeat-x 0 100% $white;
+  background-image: url("../img/zigzag-line.png") repeat-x 0 100% $white;
   color: $black;
   display: flex;
   flex-direction: column;
@@ -89,6 +89,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background: url("../img/bg-zigzag-line.svg") repeat-x 0 100%,url("../img/review@1x.jpg") no-repeat 0 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 768px 20px;
+    background-position: 20px 100%;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/review@2x.jpg");
