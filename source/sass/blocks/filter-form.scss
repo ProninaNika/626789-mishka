@@ -84,13 +84,23 @@
 .filter-form__phone,
 .filter-form__email {
   padding-right: 40px;
-  margin-right: -26px;
+  margin-right: 2px;
   fill: #f1f1f1;
 }
 
 .filter-form__mail-image,
 .filter-form__phone-image {
   fill: #cccccc;
+  position: absolute;
+  right: 76px;
+}
+
+.filter-form__mail-image {
+  top: 151px;
+}
+
+.filter-form__phone-image {
+  top: 44px;
 }
 
 .filter-form__phone:hover + .filter-form__icon-phone .filter-form__phone-image,
@@ -276,6 +286,11 @@
     left: 3px;
   }
 
+  .filter-form__mail-image,
+  .filter-form__phone-image {
+    right: 94px;
+  }
+
   .filter-form__radio-button:checked + label::after {
     width: 21px;
     height: 21px;
@@ -353,6 +368,15 @@
       font-size: 19px;
       line-height: 18px;
     }
+  }
+
+  .filter-form__mail-image {
+    top: 138px;
+  }
+
+  .filter-form__phone-image {
+    top: 60px;
+    right: 99px;
   }
 
   .filter-form__fieldset--phone {
@@ -501,6 +525,19 @@
 
   .filter-form__button {
     margin-left: 225px;
+  }
+
+  .filter-form__mail-image,
+  .filter-form__phone-image {
+    right: 352px;
+  }
+
+  .filter-form__mail-image {
+    top: 137px;
+  }
+
+  .filter-form__phone-image {
+    top: 61px;
   }
 
   .filter-form__email {

@@ -1,4 +1,4 @@
-var link=document.querySelector(".humburger");
+var link=document.querySelector(".hamburger");
 var navigation=document.querySelector(".menu");
 var orderIndex=document.querySelector(".featured__button");
 var orderCatalog=document.querySelectorAll(".product__cart-link");
@@ -6,12 +6,12 @@ var modal=document.querySelector(".modal-window");
 
 link.classList.remove("visually-hidden");
 navigation.classList.add("menu--close");
-link.classList.add("humburger--close");
+link.classList.add("hamburger--close");
 
 link.addEventListener ("click", function (evt) {
   evt.preventDefault();
   navigation.classList.toggle("menu--close");
-  link.classList.toggle("humburger--close");
+  link.classList.toggle("hamburger--close");
 });
 
 if (orderIndex) {
