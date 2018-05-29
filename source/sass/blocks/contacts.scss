@@ -114,6 +114,7 @@
       background: url("../img/icon-flag.svg") no-repeat;
       top: 56px;
       right: -3px;
+      margin-left: 50px;
     }
   }
 
@@ -159,19 +160,18 @@
     height: 521px;
     flex-wrap: wrap;
     padding-top: 83px;
-    padding-left: 101px;
   }
 
   .contacts__info {
     display: table;
-    margin-left: 173px;
+    margin-left: 223px;
     margin-top: 50px;
   }
 
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    padding-left: 170px;
+    padding-left: 219px;
     padding-top: 56px;
 
     &::before {
@@ -198,6 +198,6 @@
 
   .contacts__button {
     margin-top: 38px;
-    margin-left: 175px;
+    margin-left: 225px;
   }
 }
