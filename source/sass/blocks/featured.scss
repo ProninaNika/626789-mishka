@@ -3,8 +3,19 @@
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 41px;
+  position: relative;
+}
 
-  background: url("../img/zigzag-line.png") repeat-x 100% 100% $white;
+.featured::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 .featured__header {
@@ -31,6 +42,7 @@
 .featured__block {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .featured__description {
@@ -84,7 +96,6 @@
 
 @media (min-width: 768px) {
   .featured {
-    position: relative;
     min-width: 580px;
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +137,7 @@
   .featured__block {
     min-height: 450px;
     flex-wrap: wrap;
+    position: relative;
   }
 
   .featured__image {

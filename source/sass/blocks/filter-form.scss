@@ -57,6 +57,7 @@
 .filter-form__email,
 .filter-form__phone {
   border: none;
+  position: relative;
   border-bottom: 2px solid $black;
   height: 38px;
   padding-bottom: 7px;
@@ -92,11 +93,11 @@
 .filter-form__phone-image {
   fill: #cccccc;
   position: absolute;
-  right: 76px;
+  right: 36px;
 }
 
 .filter-form__mail-image {
-  top: 151px;
+  top: 45px;
 }
 
 .filter-form__phone-image {
@@ -156,6 +157,7 @@
 
 .filter-form__fieldset {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   padding-left: 30px;
   padding-right: 30px;
@@ -170,6 +172,7 @@
   margin: 0;
   margin-top: 10px;
   margin-bottom: 11px;
+  position: relative;
 }
 
 .filter-form__fieldset--wish .filter-form__legend {
@@ -371,12 +374,13 @@
   }
 
   .filter-form__mail-image {
-    top: 138px;
+    top: 2px;
+    right: 71px;
   }
 
   .filter-form__phone-image {
-    top: 60px;
-    right: 99px;
+    top: 3px;
+    right: 76px;
   }
 
   .filter-form__fieldset--phone {
@@ -529,15 +533,15 @@
 
   .filter-form__mail-image,
   .filter-form__phone-image {
-    right: 352px;
+    right: 230px;
   }
 
   .filter-form__mail-image {
-    top: 137px;
+    top: 1px;
   }
 
   .filter-form__phone-image {
-    top: 61px;
+    top: 1px;
   }
 
   .filter-form__email {
