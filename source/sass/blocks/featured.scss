@@ -42,7 +42,6 @@
 .featured__block {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .featured__description {
@@ -110,6 +109,10 @@
     background-position: 20px 100%;
   }
 
+  .featured::after {
+    display: none;
+  }
+
   .featured__header {
     font-size: 43px;
     line-height: 50px;
@@ -137,7 +140,6 @@
   .featured__block {
     min-height: 450px;
     flex-wrap: wrap;
-    position: relative;
   }
 
   .featured__image {
@@ -182,6 +184,10 @@
     padding-left: 46px;
     background-position: 27px 100%;
     background-size: auto 21px;
+  }
+
+  .featured::after {
+    display: none;
   }
 
   .featured__header {
