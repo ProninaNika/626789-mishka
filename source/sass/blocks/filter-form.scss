@@ -56,6 +56,7 @@
 .filter-form__text,
 .filter-form__email,
 .filter-form__phone {
+  font-family: "Open Sans";
   border: none;
   position: relative;
   border-bottom: 2px solid $black;
@@ -114,6 +115,7 @@
 }
 
 .filter-form__wishes {
+  font-family: "Open Sans";
   font-size: 18px;
   line-height: 20px;
   border: 2px solid black;
